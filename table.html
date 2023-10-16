@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+
+<meta charset="UTF-8">
+	
+<title>HTML Practice 6 - Tables</title>
+
+<style type="text/css">
+div{
+   text-align: center;
+}
+.sched{
+   margin:auto;
+   width: 550px;
+   border: solid 2px black;
+   padding: 2px;  
+   border-spacing: 5px;
+   border-collapse: separate;
+}
+tr{
+   border: solid 1px black;
+}
+td{
+   border: solid 1px black;
+   padding: 3px;
+   border-spacing: 1px;
+   border-collapse: separate; 
+   
+}
+th{
+   background-color: lightgray;
+   border: solid 1px;
+}
+caption{
+   color: #003300;
+   font-weight: bold;
+}
+.colgroup{
+background-color: #CCCCCC;
+width: 25%;
+}
+.colgroup2{
+background-color:#99FF66 ;
+}
+
+
+
+</style>
+</head>
+<body>
+
+<div >
+   <table class="sched">
+      <caption><h1>Class Schedule</h1> </caption>
+      <colgroup>
+      <tr>
+         <th>Courses</th>
+         <td class="colgroup2">monday</td>
+         <td class="colgroup2">tuesday</td>
+         <td class="colgroup2">wendsday</td>
+         <td class="colgroup2">thursday</td>
+         <td class="colgroup2">friday</td>
+      
+      </tr>
+      <tr>
+         <th>INFO 1120</th>
+         <td>&nbsp;</td>
+         <td>9-11</td>
+         <td>&nbsp;</td>
+         <td>9-11</td>
+         <td rowspan="2">&nbsp; </td>
+      </tr>
+      <tr>
+         <th>Math 1010</th>
+         <td colspan="4">12-1</td>
+      </tr>
+      <tr>
+         <colgroup>
+         <th>INFO 2420</th>
+         <td colspan="5">Online avalible 24/7</td>
+      </colgroup>
+      </tr>
+   </colgroup>
+   </table>
+   </div>
+
+
+
+</body>
+</html>
+
